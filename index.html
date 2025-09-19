@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- 
+
+███████╗░█████╗░░█████╗░██████╗░██╗██████╗░
+██╔════╝██╔══██╗██╔══██╗██╔══██╗██║██╔══██╗
+█████╗░░███████║██║░░╚═╝██████╔╝██║██████╔╝
+██╔══╝░░██╔══██║██║░░██╗██╔═══╝░██║██╔═══╝░
+███████╗██║░░██║╚█████╔╝██║░░░░░██║██║░░░░░
+╚══════╝╚═╝░░╚═╝░╚════╝░╚═╝░░░░░╚═╝╚═╝░░░░░
+
+Hey fellow coder 👀
+
+If you're reading this, you're curious — that's awesome!  
+But instead of copy-pasting, try to understand *why* the code works.  
+Steal like an artist, but build like a developer.  
+Grow your skills, not just your clipboard. 😉
+
+– S. Jana 🧠💻
+
+-->
+
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <!-- Use only one AOS CSS version -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
@@ -15,6 +35,42 @@
 </head>
 
 <body>
+
+    <div class="mobiletogglemenu show-toggle-menu" id="mobiletogglemenu">
+        <div class="closeBTN" id="closeBTN">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" color="#ffffff"
+                fill="none">
+                <path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085" stroke="#ffffff" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </div>
+
+        <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+            <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+                <a href="#home" tabindex="0" aria-label="Home menu button">
+                    &lt;/Home&gt;
+                </a>
+            </li>
+
+            <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+                <a href="#about" tabindex="0" aria-label="about menu button">
+                    &lt;/AboutMe&gt;
+                </a>
+            </li>
+            <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+                <a href="#skills" tabindex="0" aria-label="skills menu button">
+                    &lt;/Skills&gt;
+                </a>
+            </li>
+            <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+                <a href="#projects" tabindex="0" aria-label="projects menu button">
+                    &lt;/Projects&gt;
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
     <header>
         <div class="navbar">
             <div class="hey popup">Hey!</div>
@@ -39,11 +95,29 @@
                     </li>
                 </ul>
             </div>
+            <div class="hambarg-menue" id="hambarg-menue">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" color="#ffffff"
+                    fill="none">
+                    <path d="M10 5L20 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    <path d="M4 12L20 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    <path d="M4 19L14 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+            </div>
         </div>
     </header>
 
     <main>
+
+
+
         <section class="landing-page-container" id="home">
+
+
+
+
             <div class="blob"></div>
 
             <div class="text-content">
@@ -154,20 +228,15 @@
                 <div class="info-dp-section">
                     <div class="about-info" data-aos="fade-right">
                         <p tabindex="0">
-                            Hi! My name is Sandipan Jana.
-                            I'm a web developer and digital visual artist. I love creating beautiful and functional
-                            things that live on the internet.
-
-                            My journey into web development began in 2021 when I started uploading my digital concept
-                            artworks online. What began as a way to share my art quickly turned into a deep passion for
-                            web development.
-
-                            Instead of just showcasing my artwork, I found myself more fascinated by how websites are
-                            built. Learning to design and develop custom experiences for the web has taught me a lot
-                            about creativity, problem-solving, and technology.
-
-                            These days, my main focus is on crafting unique, creative, and user-friendly web designs. I
-                            enjoy coding from scratch and bringing ideas to life directly in the browser — combining
+                            Hi! I'm Sandipan Jana — a web developer and digital visual artist.
+                            I love creating beautiful, functional things that live on the internet.
+                            My journey began in 2024 by sharing my digital concept art online.
+                            That led me to explore how websites are built, and I quickly fell in love with web
+                            development.
+                            Designing and coding from scratch became a natural extension of my creativity.
+                            I focus on crafting unique, user-friendly web experiences that blend art and function.
+                            Building directly in the browser allows me to bring ideas to life in engaging ways.
+                            For me, it's all about combining creativity, technology, and problem-solving.
                             design with functionality in a way that feels natural and engaging.
                         </p>
                         <br>
@@ -193,8 +262,8 @@
                     </div>
 
                     <div class="dp" data-aos="fade-left">
-                        <img src="240_F_904513582_LFiziu5bNclLpw8seezU4PmCAULvD2UT.jpg"
-                            alt="Portrait of Vinod Jangid" tabindex="0">
+                        <img src="23MH1A05K7.png" alt="Portrait of Vinod Jangid"
+                            tabindex="0">
                     </div>
                 </div>
             </div>
@@ -288,8 +357,7 @@
                     <div data-aos="fade-up" class="project-box-wrapper aos-init aos-animate">
                         <div class="project-box project-box2" id="project-box2">
                             <div class="info-div">
-                                <img src="" alt="atomic asher website favicon"
-                                    class="faviconforProject">
+                                <img src="" alt="atomic asher website favicon" class="faviconforProject">
                                 <article class="ProjectHeading"></article>
                                 <p class="ProjectDescription">
                                 </p>
@@ -309,12 +377,12 @@
                         </div>
                     </div>
                     <!-- ---------------------- -->
-                    
-                    <!-- ---------------------- -->
-                    
+
                     <!-- ---------------------- -->
 
-                  
+                    <!-- ---------------------- -->
+
+
                     <!-- --------------------- -->
 
                 </div>
@@ -329,7 +397,7 @@
                         <div class="social-media-container">
                             <div class="getintoch">GetinTouch();</div>
                             <div class="logo">
-                                
+
                                 <a href="#" class="socialicon-link" aria-label="Instagram">
                                     <svg class="socialicon" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"
                                         aria-hidden="true" focusable="false">
@@ -344,7 +412,7 @@
                                             d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
                                     </svg>
                                 </a>
-                                
+
                                 <a href="#" class="socialicon-link" aria-label="LinkedIn">
                                     <svg class="socialicon" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"
                                         aria-hidden="true" focusable="false">
@@ -398,14 +466,14 @@
 
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer-content">
             <p class="quote">"The only way to do great work is to love what you do."</p>
             <p class="author">&mdash; Steve Jobs</p>
             <hr class="divider">
             <p class="copyright">&copy; 2025 Sandipan Jana. All Rights Reserved.</p>
         </div>
-    </footer> -->
+    </footer>
 
     <!-- Use matching AOS JS version -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -434,9 +502,45 @@
             toggle.classList.toggle('active');
             visualmode();
         });
+
+        console.log("HI");
+
+        // const sidebar = document.getElementById('mobiletogglemenu');
+        // const toggleBtn = document.getElementById('hambarg-menue');
+        // const closeBtn = document.getElementById("closeBTN");
+
+        // const header = document.querySelector('header');
+        // const footer = document.querySelector('footer');
+        // const main = document.querySelector('main');
+        // // const overlay = document.getElementsByClassName('overlay');
+
+        // toggleBtn.addEventListener('click', () => {
+        //     console.log("sidebar is open");
+        //     sidebar.style.right = "0";
+        // });
+
+
+        // closeBtn.addEventListener('click', () => {
+        //     console.log("side bar is close !!")
+        //     sidebar.style.right = "-9999px";
+        // });
+
+
+        const toggleBtn = document.getElementById('hambarg-menue');
+        const closeBtn = document.getElementById('closeBTN');
+        const sidebar = document.querySelector('.mobiletogglemenu');
+
+        toggleBtn.addEventListener('click', () => {
+            console.log("Sidebar is open");
+            sidebar.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            console.log("Sidebar is closed");
+            sidebar.classList.remove('active');
+        });
+
     </script>
-
 </body>
-
 
 </html>
