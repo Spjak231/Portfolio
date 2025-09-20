@@ -1530,7 +1530,7 @@ body.dark .demo-content {
 /* ==============footer ===========> */
 .footer {
     background-color: var(--color-black);
-    color: #ffffff;
+    color: var(--color-white);
     padding: 2rem 0;
     text-align: center;
     width: 100%;
@@ -1973,3 +1973,4 @@ body.dark .demo-content {
         gap: 40px;
     }
 }
+
