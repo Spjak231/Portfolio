@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -180,7 +183,7 @@ header {
     background-color: var(--color-light-purple);
     width: 600px;
     height: 100vh;
-    filter: blur(130px);
+    filter: blur(100px);
     opacity: 0.5;
     animation: 1s linear 0s infinite alternate-reverse none running breath;
 }
@@ -218,7 +221,7 @@ header {
     width: fit-content;
     display: flex;
     align-items: flex-end;
-    color: var(--color-black);
+    color: var(--color-white);
     font-family: fira code;
 }
 
@@ -395,6 +398,7 @@ header {
 
 
 #work {
+    color: var(--color-white);
     display: flex;
     align-items: flex-start;
     /* flex-direction: row; */
@@ -1165,6 +1169,7 @@ body.dark .demo-content {
     /* background-color: var(--color-dark-mode); */
     background-color: var(--color-dark-mode);
     padding-top: 30px;
+
 }
 
 .footer-section-div {
@@ -1209,6 +1214,8 @@ body.dark .demo-content {
     margin-bottom: 2rem;
     letter-spacing: 0.05em;
     user-select: none;
+    color: var(--color-ddd-color);
+    /* color: linear-gradient(90deg, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink)); */
 }
 
 .social-media-container {
@@ -1317,7 +1324,7 @@ body.dark .demo-content {
 
 
 .contactMe p {
-    color: var(--color-gray);
+    color: var(--color-white);
     text-align: center;
     margin-bottom: 40px;
     font-size: 1.5em;
@@ -1528,6 +1535,12 @@ body.dark .demo-content {
     text-align: center;
     width: 100%;
     height: auto;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 50px;
 }
 
 .footer-content {
@@ -1558,9 +1571,15 @@ body.dark .demo-content {
 }
 
 .copyright {
-    font-size: 0.875rem;
+    /* font-size: 0.875rem; */
     /* text-sm */
     color: #6b7280;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 
@@ -1737,10 +1756,13 @@ body.dark .demo-content {
     }
 
     .blob {
-        transform: translateX(-17px);
+        transform: translateX(332px);
         top: 145px;
         width: 90vw;
         height: 65vh;
+        filter: blur(230px);
+        opacity: 0.9;
+        animation: 3s linear 0s infinite alternate-reverse none running breath;
     }
 
     #work div {
@@ -1789,6 +1811,13 @@ body.dark .demo-content {
         display: flex;
     }
 
+    .skills-section {
+        width: 90%;
+    }
+
+    .mobile-navbar-tabs-li {
+        font-size: 1.4rem;
+    }
 }
 
 /* 📱 5. Mobile phones (landscape & large phones) */
@@ -1930,5 +1959,17 @@ body.dark .demo-content {
 
     .quote {
         font-size: .9rem;
+    }
+    .copyright{
+        font-size: .8rem;
+    }
+
+    .mobile-navbar-tabs-li {
+        font-size: 0.9rem;
+        gap: 40px;
+    }
+
+    .mobile-navbar-tabs-ul {
+        gap: 40px;
     }
 }
